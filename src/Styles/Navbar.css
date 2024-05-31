@@ -1,0 +1,25 @@
+.navbar-container {
+    display: flex;
+    position: relative; /* Ensure relative positioning for absolute children */
+    min-height: 160px;
+  }
+
+.logo-brand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 4px;
+  margin-left: 5px;
+  
+  }
+  
+.logo {
+    max-height: 150px; /* img size */
+  }
+
+  .links{
+    position: absolute;
+    margin-left: 600px;
+  }
+
+ 
