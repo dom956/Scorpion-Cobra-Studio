@@ -1,11 +1,10 @@
 import React from "react";
 
 
-function Copyright() {
-   const style = {
-    position: 'fixed',
-    left: '50%',
-    textAlign: 'center',
+function Footer() {
+  const style = {
+    display: "flex",
+    justifyContent: "center",
    }
 
 
@@ -17,4 +16,4 @@ function Copyright() {
       );
     }
 
-export default Copyright;
+export default Footer;

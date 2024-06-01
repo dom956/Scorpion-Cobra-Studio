@@ -7,8 +7,8 @@ import "../Styles/Navbar.css";
 
 function NavbarMenu() {
   return (
-   <Navbar className='navbar-container' bg="light">
-    <Container>
+   <Navbar bg="primary">
+    <Container className='container'>
       <Link to="/">
         <div className='logo-brand'>
         <img
@@ -18,7 +18,7 @@ function NavbarMenu() {
         />
         </div>
       </Link>
-      <Nav className='links'>
+      <Nav className="links">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
         <Nav.Link as={Link} to="/about">About</Nav.Link>

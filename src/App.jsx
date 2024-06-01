@@ -6,23 +6,26 @@ import About from './Pages/About';
 import Projects from "./Pages/Projects";
 import Contact from './Pages/Contact';
 import ErrorPage from './Pages/ErrorPage';
-import Copyright from './Components/Copyright';
+import Footer from './Components/Footer';
+import "./App.css";
 
 
 function App() {
   return (
     <Router>
-      <div>
-        <NavbarMenu/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<ErrorPage />} />
-        </Routes>
-         <Copyright/>
-      </div>
+        <div>
+                <NavbarMenu/>
+                <div>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/*" element={<ErrorPage />} />
+                    </Routes>
+                </div>
+                <Footer className="footer" />
+            </div>
     </Router>
   );
 }

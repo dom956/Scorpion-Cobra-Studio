@@ -1,0 +1,15 @@
+.parent-container {
+  width: 50%; /* Set the desired width */
+  margin: 0 auto;
+  margin-top:  5px; 
+  text-align: center; /* Centers the text inside the div */
+  background-color: green;
+  
+}
+
+
+.splash-screen{
+    max-width: 50%; /* Ensures the image does not exceed the container's width */
+    max-height: 50%; /* Ensures the image does not exceed the container's height */
+    object-fit: contain;
+}
