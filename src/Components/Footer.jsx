@@ -16,7 +16,6 @@ function Footer() {
     right: 0,
    }
 
-
     return (
         <div style={style}>
             <p>All Rights Reserved</p>
