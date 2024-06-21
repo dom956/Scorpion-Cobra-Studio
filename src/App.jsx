@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Projects from "./Pages/Projects";
 import Contact from './Pages/Contact';
 import ErrorPage from './Pages/ErrorPage';
+import Gamepage from './Pages/Gamepage';
 import Footer from './Components/Footer';
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/gamepage/:gameId" element={<Gamepage />} />
                         <Route path="/*" element={<ErrorPage />} />
                     </Routes>
                 </div>

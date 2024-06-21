@@ -1,0 +1,41 @@
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this based on your layout needs */
+  }
+
+.parent-container {
+    width: 50%; /* Set the desired width */
+    margin: 0 auto;
+    margin-top:  5px; 
+    text-align: center; /* Centers the text inside the div */
+    background-color: green;
+    
+  }
+  
+  
+  .trailer{
+      max-width: 50%; /* Ensures the image does not exceed the container's width */
+      max-height: 50%; /* Ensures the image does not exceed the container's height */
+      object-fit: contain;
+      padding-bottom: 5px;
+  }
+
+
+  .store-links {
+    margin-top: 20px;
+  }
+  
+  .store-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .store-link:hover {
+    text-decoration: underline;
+  }

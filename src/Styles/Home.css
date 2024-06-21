@@ -12,4 +12,5 @@
     max-width: 50%; /* Ensures the image does not exceed the container's width */
     max-height: 50%; /* Ensures the image does not exceed the container's height */
     object-fit: contain;
+    padding-bottom: 5px;
 }
