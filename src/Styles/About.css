@@ -1,0 +1,100 @@
+.about-page {
+    padding: 20px;
+    
+  }
+
+  h2{
+    text-align: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .image-placeholder {
+    width: 150px; /* Increased size */
+    height: 150px; /* Increased size */
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px; /* Increase margin for better spacing */
+    font-size: 16px; /* Adjust font size to fit within the circle */
+  }
+  
+  .text-box {
+    flex-grow: 1;
+    width: 100%; /* Ensure it takes up available width */
+    height: 150px; /* Match height with image for a square shape */
+    background-color: #e0e0e0;
+    display: flex;
+    
+    
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px; /* Add padding for better text spacing */
+  }
+  
+  .education-section {
+    margin-bottom: 20px;
+    
+  }
+  
+  .education-details {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding:  0;
+  }
+
+  .education-column{
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid black;
+    
+    
+  }
+
+  .education-column:first-child{
+    border-left: none;
+  }
+  
+  .tools-section {
+    margin-top: 20px;
+  }
+  
+  .tools-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tool-item {
+    display: flex;
+    align-items: stretch; /* Ensure items stretch to the same height */
+    border: 1px solid black;
+    padding: 0; /* Remove padding */
+  }
+  
+  .tool-title {
+    font-weight: bold;
+    padding: 10px;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .tools-symbols {
+    flex: 9;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+  }
+
+  .icon{
+    margin-right: 10px;
+  }
