@@ -1,0 +1,56 @@
+.category-page > h1 {
+    padding: 20px;
+    text-align: center;
+  }
+
+ 
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .project-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+  }
+  
+  .project-info {
+    flex: 1; 
+  }
+  
+  .project-info h2 {
+    margin-top: 0;
+  }
+  
+  .project-info p {
+    margin: 5px 0;
+  }
+  
+  .project-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-image {
+  flex: auto; 
+  width: 100px; 
+  height: 250px; 
+  margin-left: 20px; 
+  }
+  
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  

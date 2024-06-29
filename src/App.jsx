@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import ErrorPage from './Pages/ErrorPage';
 import Gamepage from './Pages/Gamepage';
 import Footer from './Components/Footer';
+import Category from './Pages/Category';
 import "./App.css";
 
 
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/gamepage/:gameId" element={<Gamepage />} />
+                        <Route path="/category/:categoryName" element={<Category />} />
                         <Route path="/*" element={<ErrorPage />} />
                     </Routes>
                 </div>
