@@ -8,7 +8,7 @@
 .parent-container {
     width: 50%; /* Set the desired width */
     margin: 0 auto;
-    margin-top:  5px; 
+    margin-bottom:  100px; 
     text-align: center; /* Centers the text inside the div */
     background-color: green;
     
@@ -38,4 +38,20 @@
   
   .store-link:hover {
     text-decoration: underline;
+  }
+
+
+
+  .project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make the container full width */
+    height: 300px; /* Set a fixed height for the container */
+  }
+  
+  .project-image {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
   }

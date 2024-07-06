@@ -1,7 +1,10 @@
+.page-container{
+  margin-top: 10px;
+}
+
+
 .parent-container {
   width: 50%; /* Set the desired width */
-  margin: 0 auto;
-  margin-top:  5px; 
   text-align: center; /* Centers the text inside the div */
   background-color: green;
   

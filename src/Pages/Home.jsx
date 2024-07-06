@@ -4,36 +4,40 @@ import splashscreen from "../Images/splashscreen.png";
 import { Link } from 'react-router-dom';
 
 
-const gamesList = {
+const projectList = {
   game1: {
-      title: 'Escape The Humans',
-      image: splashscreen
+    projectid: 'game1',
+    title: 'Escape The Humans',
+    image: splashscreen
   },
 
   game2: {
-      title: 'Dont Let It Grow',
-      image: splashscreen
+    projectid: 'game2',
+    title: 'Dont Let It Grow',
+    image: splashscreen
   },
 };
 
 function Home() {
     return (
+      <div className='page-container'>
       <div className='parent-container'>
       <h1>My Games</h1>
       <div className='games-list'>
-        {Object.keys(gamesList).map(gameId => (
-          <div key={gameId} className='game-item'>
-            <h2>{gamesList[gameId].title}</h2>
-            <Link to={`/gamepage/${gameId}`}>
+        {Object.keys(projectList).map(projectId => (
+          <div key={projectId} className='game-item'>
+            <h2>{projectList[projectId].title}</h2>
+            <Link to={`/project/${projectList[projectId].projectid}`}>
               <img
-                src={gamesList[gameId].image}
-                alt={gamesList[gameId].title}
+                src={projectList[projectId].image}
+                alt={projectList[projectId].title}
                 className="splash-screen"
               />
             </Link>
           </div>
         ))}
       </div>
+    </div>
     </div>
     );
   }
