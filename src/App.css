@@ -1,5 +1,15 @@
-html{
+html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
 }

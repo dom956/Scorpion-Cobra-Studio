@@ -30,7 +30,7 @@ function Projects() {
         <div></div>
       </div>
       </Link>
-      <Link to="/category/writing" className='link'>
+      <Link to="/category/literature" className='link'>
       <div className="category writing">
         <h2>Literature</h2>
         <h3>Impression Projects</h3>

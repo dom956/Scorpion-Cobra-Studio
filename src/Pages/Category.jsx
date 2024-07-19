@@ -118,36 +118,38 @@ const Category = () => {
 
     return (
         <div className="category-page">
-            <h1>{pageTitle}</h1>
-            <div className="project-grid">
-                {projects.map((project, index) => (
-                    <div key={index} className="project-box">
-                        <div className="project-info">
-                            <h2>{project.title}</h2>
-                            <p>Description: {project.description}</p>
-                            <p>Creator: {project.creator}</p>
-                            {categoryName === 'gaming' && <p>Platforms: {project.platforms}</p>}
-                            <p>Published: {project.published}</p>
+        <h1>{pageTitle}</h1>
+        <div className="project-grid">
+            {projects.map((project, index) => (
+                <div key={index} className="project-box">
+                    <div className="project-info">
+                        <h2>{project.title}</h2>
+                        <p>Description: {project.description}</p>
+                        <p>Creator: {project.creator}</p>
+                        {categoryName === 'gaming' && <p>Platforms: {project.platforms}</p>}
+                        <p>Published: {project.published}</p>
+                        {categoryName === 'gaming' || categoryName === 'web' ? (
                             <div className="created-with-container">
                                 <p className="created-with-text">Created with:</p>
                                 <div className="icons">
-                                    {project.createdWith.map((tool, idx) => (
+                                    {project.createdWith && project.createdWith.map((tool, idx) => (
                                         <div key={idx} className="icon">
                                             <FontAwesomeIcon icon={tool.icon} title={tool.name} size="2x" />
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                        </div>
-                        <div className="project-image">
-                        <Link to={`/project/${project.id}`}>
-                                <img src={project.image} alt={project.title} />
-                        </Link>
-                        </div>
+                        ) : null}
                     </div>
-                ))}
-            </div>
+                    <div className="project-image">
+                        <Link to={`/project/${project.id}`}>
+                            <img src={project.image} alt={project.title} />
+                        </Link>
+                    </div>
+                </div>
+            ))}
         </div>
+    </div>
     );
 };
 

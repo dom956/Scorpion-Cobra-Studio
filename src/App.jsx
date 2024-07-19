@@ -15,9 +15,9 @@ import "./App.css";
 function App() {
   return (
     <Router>
-        <div>
+        <div className='app-wrapper'>
                 <NavbarMenu/>
-                <div>
+                <div className='main-content'>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
