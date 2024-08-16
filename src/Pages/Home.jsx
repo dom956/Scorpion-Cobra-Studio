@@ -20,8 +20,8 @@ const projectList = {
 
 function Home() {
     return (
-      <div className='page-container'>
-      <div className='parent-container'>
+      <div className='homepage-container'>
+      <div className='home-container'>
       <h1>My Games</h1>
       <div className='games-list'>
         {Object.keys(projectList).map(projectId => (

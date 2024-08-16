@@ -1,16 +1,16 @@
-.page-center {
+.project-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust this based on your layout needs */
   }
 
-.parent-container {
+.project-container {
     width: 50%; /* Set the desired width */
     margin: 0 auto;
     margin-bottom:  100px; 
     text-align: center; /* Centers the text inside the div */
-    background-color: green;
+    /* put background image here or color */
     
   }
   
@@ -31,7 +31,7 @@
     display: inline-block;
     margin-bottom: 10px;
     padding-right: 20px;
-    color: black;
+    color: blue;
     font-weight: bold;
     text-decoration: none;
   }

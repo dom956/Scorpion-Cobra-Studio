@@ -1,11 +1,12 @@
 import React from 'react';
+import "../Styles/Errorpage.css";
+import errorpage from '../Images/errorpage.jpeg';
 
 function ErrorPage() {
     return (
-      <div>
-        <h1>Welcome to the 404 Page</h1>
-        <p>This is the home page of your React app.</p>
-      </div>
+      <div className="error-page">
+      <img src={errorpage} alt="404 Not Found" className="background-image" />
+    </div>
     );
   }
 

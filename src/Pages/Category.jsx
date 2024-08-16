@@ -119,10 +119,10 @@ const Category = () => {
     return (
         <div className="category-page">
         <h1>{pageTitle}</h1>
-        <div className="project-grid">
+        <div className="category-grid">
             {projects.map((project, index) => (
-                <div key={index} className="project-box">
-                    <div className="project-info">
+                <div key={index} className="category-box">
+                    <div className="category-info">
                         <h2>{project.title}</h2>
                         <p>Description: {project.description}</p>
                         <p>Creator: {project.creator}</p>
@@ -141,7 +141,7 @@ const Category = () => {
                             </div>
                         ) : null}
                     </div>
-                    <div className="project-image">
+                    <div className="category-image">
                         <Link to={`/project/${project.id}`}>
                             <img src={project.image} alt={project.title} />
                         </Link>

@@ -16,8 +16,8 @@ const Project = () => {
             trailerId: '6r9mpLfZKbQ',
             storeLinks: [
               { name: 'Google Play', url: 'https://play.google.com/' },
-              { name: 'Itch.io', url: 'https://itch.io/' },
-              { name: 'Apple Store', url: 'https://www.apple.com/app-store/' },
+              { name: 'Itch.io', url: 'https://itch.io/' }
+              
             ],
             
           };
@@ -28,8 +28,7 @@ const Project = () => {
             title: 'Dont Let It Grow',
             trailerId: '6r9mpLfZKbQ',
             storeLinks: [
-              { name: 'WebGL', url: 'https://play.google.com/' },
-              
+              { name: 'WebGL', url: 'https://play.google.com/' }
             ],
             
           };
@@ -48,8 +47,8 @@ const Project = () => {
    
 
     return (
-        <div className='page-center'>
-      <div className='parent-container'>
+        <div className='project-page'>
+      <div className='project-container'>
         <h1>{project.title}</h1>
         
         {/* Render trailer video if trailerId is present */}

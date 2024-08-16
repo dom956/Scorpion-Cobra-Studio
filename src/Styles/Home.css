@@ -1,13 +1,14 @@
-.page-container{
+.homepage-container{
   margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
-.parent-container {
+.home-container {
   width: 50%; /* Set the desired width */
   text-align: center; /* Centers the text inside the div */
-  background-color: green;
-  
 }
 
 
@@ -17,3 +18,4 @@
     object-fit: contain;
     padding-bottom: 5px;
 }
+
