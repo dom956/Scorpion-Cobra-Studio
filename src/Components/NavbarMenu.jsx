@@ -7,7 +7,7 @@ import "../Styles/Navbar.css";
 
 function NavbarMenu() {
   return (
-   <Navbar bg="light">
+   <Navbar bg="transparent">
     <Container className='container'>
       <Link to="/">
         <div className='logo-brand'>

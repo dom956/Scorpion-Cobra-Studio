@@ -31,4 +31,9 @@
   color: blue;
 }
 
+.navbar {
+  background: url('../Images/background5.png') no-repeat center center;
+  background-size: cover;
+}
+
  
