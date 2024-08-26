@@ -30,3 +30,5 @@ function NavbarMenu() {
 }
 
 export default NavbarMenu;
+
+/* add press kit for journalist in navbar */

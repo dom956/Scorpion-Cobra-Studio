@@ -27,7 +27,7 @@ function Home() {
         {Object.keys(projectList).map(projectId => (
           <div key={projectId} className='game-item'>
             <h2>{projectList[projectId].title}</h2>
-            <Link to={`/project/${projectList[projectId].projectid}`}>
+            <Link to={`/project/${projectList[projectId].projectid}`} className='link'>
               <img
                 src={projectList[projectId].image}
                 alt={projectList[projectId].title}

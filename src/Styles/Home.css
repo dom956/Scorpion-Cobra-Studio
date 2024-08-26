@@ -5,21 +5,43 @@
   align-items: center; 
   height: 100vh;
   width: 100%;
+  position: relative;
+  overflow: hidden; /* Ensures no overflow from pseudo-element */
+}
+
+.homepage-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: url('../Images/background1.png') center/cover no-repeat;
-  position: relative; 
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  background-blend-mode: overlay; /* Blend the background image and color */
+  z-index: -1; /* Ensure this is behind the content */
 }
 
 .home-container {
-  margin-bottom: 90px;
-  width: 50%; /* Set the desired width for content */
+  width: 80%; /* Adjust to make the container more contained */
+  width: 100%; /* Optional: Maximum width to prevent it from becoming too wide */
   text-align: center; /* Centers the text inside the div */
+  position: relative; /* Necessary for z-index to take effect */
+  
 }
 
-
-.splash-screen{
-    max-width: 50%; /* Ensures the image does not exceed the container's width */
-    max-height: 50%; /* Ensures the image does not exceed the container's height */
-    object-fit: contain;
-    padding-bottom: 5px;
+.game-item {
+  width: 100%; /* Full width of the container */
+  background-color: black; /* Background color for each item */
+  color: white; /* Text color inside the item */
+  padding: 20px; /* Padding around the content */
+  margin-bottom: 20px; /* Space between items */
 }
 
+.splash-screen {
+  max-width: 100%; /* Ensures the image does not exceed the item’s width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Adjust as needed to fit within the item */
+  object-fit: contain;
+  padding-bottom: 5px;
+}

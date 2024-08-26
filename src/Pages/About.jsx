@@ -72,6 +72,6 @@ function About() {
   }
 
 /* add custom SVG to your project since fontawsome dont have them: audacity, blender, krita, mysql, mongoDB, C# */
-
+/* add pro indie dev certificate */
 
   export default About;
