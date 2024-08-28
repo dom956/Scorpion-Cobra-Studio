@@ -1,7 +1,28 @@
 .about-page {
-    padding: 20px;
-    
-  }
+  padding: 20px;
+  position: relative;
+  background-image: url('../Images/background1.png'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  height: 100vh;
+}
+
+.about-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+
+.about-page * {
+  position: relative;
+  z-index: 2;
+}
 
   h2{
     text-align: center;
@@ -23,40 +44,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px; /* Increase margin for better spacing */
-    font-size: 16px; /* Adjust font size to fit within the circle */
+    margin-right: 30px; 
   }
   
   .text-box {
     flex-grow: 1;
     width: 100%; /* Ensure it takes up available width */
     height: 150px; /* Match height with image for a square shape */
-    background-color: #e0e0e0;
+    background-color: black;
     display: flex;
-    
-    
-    font-size: 16px; /* Adjust font size as needed */
-    padding: 10px; /* Add padding for better text spacing */
+    font-size: 16px; 
+    padding: 10px;
+    border: 1px solid white;
   }
   
   .education-section {
     margin-bottom: 20px;
-    
   }
   
   .education-details {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid white;
     padding:  0;
   }
 
   .education-column{
     flex: 1;
     padding: 10px;
-    border-left: 1px solid black;
-    
-    
+    border-left: 1px solid white;
+    background-color: black;
   }
 
   .education-column:first-child{
@@ -71,19 +88,20 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: black;
   }
   
   .tool-item {
     display: flex;
     align-items: stretch; /* Ensure items stretch to the same height */
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 0; /* Remove padding */
   }
   
   .tool-title {
     font-weight: bold;
     padding: 10px;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     display: flex;
     align-items: center; /* Center the content vertically */
   }

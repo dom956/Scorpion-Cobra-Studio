@@ -23,22 +23,29 @@ function About() {
             <p>School: Hasifa communication and digital</p>
             <p>Year: 2020-2021</p>
             <p>Certificate: Game design and development</p>
-            
           </div>
+
           <div className="education-column">
             <h3>Web Development</h3>
             <p>School: Hacker U</p>
             <p>Year: 2022-2023</p>
             <p>Certificate: Web design and development</p>
-            
           </div>
+
           <div className="education-column">
             <h3>Film</h3>
             <p>School: Skillshare</p>
             <p>Year: 2023</p>
             <p>Online Certificate: Screenwriting</p>
-            
           </div>
+
+          <div className="education-column">
+            <h3>Game Development</h3>
+            <p>School: Pro Indie Dev</p>
+            <p>Year: 2023</p>
+            <p>Online Certificate: Pro Indie Dev</p>
+          </div>
+
         </div>
       </div>
 
@@ -72,6 +79,6 @@ function About() {
   }
 
 /* add custom SVG to your project since fontawsome dont have them: audacity, blender, krita, mysql, mongoDB, C# */
-/* add pro indie dev certificate */
+
 
   export default About;

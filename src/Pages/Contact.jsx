@@ -45,6 +45,19 @@ function Contact() {
           <ValidationError prefix="Country of Employer" field="employerCountry" errors={state.errors} />
         </label>
 
+        <label htmlFor="employerPhone">
+          Employer Phone:
+          <input id="employerPhone" type="number" name="employerPhone" placeholder="optional"  />
+          <ValidationError prefix="Phone of Employer" field="employerPhone" errors={state.errors} />
+        </label>
+        <p>if international dialing code is different than employer country, please add that to phone or details sections</p>
+
+        <label htmlFor="employerEmail">
+          Employer Email:
+          <input id="employerEmail" type="email" name="employerEmail" required />
+          <ValidationError prefix="Employer Email" field="employerEmail" errors={state.errors} />
+        </label>
+
         <label htmlFor="role">
           Role:
           <select id="role" name="role" required>
