@@ -4,7 +4,10 @@ import '../Styles/Category.css';
 import filmImage from '../Images/film.jpg';
 import splashscreen from '../Images/splashscreen.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUnity, faAccusoft } from '@fortawesome/free-brands-svg-icons';
+import { faUnity, faReact, faJs, faBootstrap, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import audacityicon from "../Images/icons/audacityicon.png";
+import godoticon from "../Images/icons/godoticon.png";
+import logo from "../Images/logowhitebg.png";
 
 const Category = () => {
     const { categoryName } = useParams();
@@ -21,23 +24,23 @@ const Category = () => {
                     title: 'Escape The Humans',
                     description: '2D puzzle platformer game, navigate your way through a series of mazes, avoid enemies, and solve your way out.',
                     creator: 'Scorpion Cobra Studio',
-                    platforms: 'WebGL, Mobile',
+                    platforms: 'PC, Mobile',
                     published: '2024',
                     createdWith: [
                         { name: 'Unity', icon: faUnity },
-                        { name: 'ad', icon: faAccusoft },
+                        { name: 'Audacity', icon: audacityicon }
                     ],
                     image: splashscreen,
                 },
                 {
                     id: 'game2',
                     title: 'Dont Let It Grow',
-                    description: 'mini 2D game with a message',
+                    description: 'Mini 2D game with a message',
                     creator: 'Scorpion Cobra Studio',
                     platforms: 'WebGL',
                     published: '2024',
                     createdWith: [
-                        { name: 'Unity', icon: faUnity },
+                        {name: 'Godot', icon: godoticon }
                     ],
                     image: filmImage,
                 },
@@ -53,20 +56,13 @@ const Category = () => {
                     creator: 'Osher Volotker',
                     published: '2024',
                     createdWith: [
-                        { name: 'Unity', icon: faUnity },
+                        { name: 'React', icon: faReact },
+                        { name: 'HTML', icon: faHtml5 },
+                        { name: 'Javascript', icon: faJs },
+                        { name: 'CSS', icon: faCss3Alt },
+                        { name: 'Bootstrap', icon: faBootstrap },
                     ],
-                    image: filmImage,
-                },
-                {
-                    id: 'web2',
-                    title: 'website',
-                    description: 'website description',
-                    creator: 'Scorpion Cobra Studio',
-                    published: '2024',
-                    createdWith: [
-                        { name: 'Unity', icon: faUnity },
-                    ],
-                    image: filmImage,
+                    image: logo,
                 },
             ];
             break;
@@ -118,38 +114,42 @@ const Category = () => {
 
     return (
         <div className="category-page">
-        <h1>{pageTitle}</h1>
-        <div className="category-grid">
-            {projects.map((project, index) => (
-                <div key={index} className="category-box">
-                    <div className="category-info">
-                        <h2>{project.title}</h2>
-                        <p>Description: {project.description}</p>
-                        <p>Creator: {project.creator}</p>
-                        {categoryName === 'gaming' && <p>Platforms: {project.platforms}</p>}
-                        <p>Published: {project.published}</p>
-                        {categoryName === 'gaming' || categoryName === 'web' ? (
-                            <div className="created-with-container">
-                                <p className="created-with-text">Created with:</p>
-                                <div className="icons">
-                                    {project.createdWith && project.createdWith.map((tool, idx) => (
-                                        <div key={idx} className="icon">
-                                            <FontAwesomeIcon icon={tool.icon} title={tool.name} size="2x" />
-                                        </div>
-                                    ))}
+            <h1>{pageTitle}</h1>
+            <div className="category-grid">
+                {projects.map((project, index) => (
+                    <div key={index} className="category-box">
+                        <div className="category-info">
+                            <h2>{project.title}</h2>
+                            <p>Description: {project.description}</p>
+                            <p>Creator: {project.creator}</p>
+                            {categoryName === 'gaming' && <p>Platforms: {project.platforms}</p>}
+                            <p>Published: {project.published}</p>
+                            {categoryName === 'gaming' || categoryName === 'web' ? (
+                                <div className="created-with-container">
+                                    <p className="created-with-text">Created with:</p>
+                                    <div className="icons">
+                                        {project.createdWith && project.createdWith.map((tool, idx) => (
+                                            <div key={idx} className="icon">
+                                                {typeof tool.icon === 'object' ? (
+                                                    <FontAwesomeIcon icon={tool.icon} title={tool.name} size="2x" />
+                                                ) : (
+                                                    <img src={tool.icon} alt={tool.name} title={tool.name} className="icon-image" />
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ) : null}
+                            ) : null}
+                        </div>
+                        <div className="category-image">
+                            <Link to={`/project/${project.id}`}>
+                                <img src={project.image} alt={project.title} />
+                            </Link>
+                        </div>
                     </div>
-                    <div className="category-image">
-                        <Link to={`/project/${project.id}`}>
-                            <img src={project.image} alt={project.title} />
-                        </Link>
-                    </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
-    </div>
     );
 };
 
