@@ -17,25 +17,32 @@
   right: 0;
   bottom: 0;
   background: url('../Images/background1.png') center/cover no-repeat;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  background-blend-mode: overlay; /* Blend the background image and color */
-  z-index: -1; /* Ensure this is behind the content */
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: overlay; 
+  z-index: -1;
+}
+
+h2{
+  padding-bottom: 5px;
 }
 
 .home-container {
   width: 80%; /* Adjust to make the container more contained */
   width: 100%; /* Optional: Maximum width to prevent it from becoming too wide */
-  text-align: center; /* Centers the text inside the div */
-  position: relative; /* Necessary for z-index to take effect */
-  
+  text-align: center; 
+  position: relative; 
 }
 
 .game-item {
   width: 100%; /* Full width of the container */
-  background-color: black; /* Background color for each item */
-  color: white; /* Text color inside the item */
-  padding: 20px; /* Padding around the content */
-  margin-bottom: 20px; /* Space between items */
+  color: white; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+}
+
+.splash-screen:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
 .splash-screen {

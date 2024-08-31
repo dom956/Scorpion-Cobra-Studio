@@ -22,7 +22,7 @@ function Home() {
     return (
       <div className='homepage-container'>
       <div className='home-container'>
-      <h1>My Games</h1>
+      <h1>Latest Projects</h1>
       <div className='games-list'>
         {Object.keys(projectList).map(projectId => (
           <div key={projectId} className='game-item'>
