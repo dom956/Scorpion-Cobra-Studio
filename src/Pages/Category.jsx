@@ -22,7 +22,7 @@ const Category = () => {
                 {
                     id: 'game1',
                     title: 'Escape The Humans',
-                    description: '2D puzzle platformer game, navigate your way through a series of mazes, avoid enemies, and solve your way out.',
+                    description: '2D puzzle platformer game, navigate your way through a series of challenging levels, avoid enemies, and solve your way out.',
                     creator: 'Scorpion Cobra Studio',
                     platforms: 'PC, Mobile',
                     published: '2024',
@@ -69,43 +69,13 @@ const Category = () => {
         case 'film':
             pageTitle = 'Film Projects';
             projects = [
-                {
-                    id: 'film1',
-                    title: 'Film Title 1',
-                    description: 'Description of film 1.',
-                    creator: 'Film Creator 1',
-                    published: '2024',
-                    image: filmImage,
-                },
-                {
-                    id: 'film2',
-                    title: 'Film Title 2',
-                    description: 'Description of film 2.',
-                    creator: 'Film Creator 2',
-                    published: '2024',
-                    image: filmImage,
-                },
+              /* your film projects here */
             ];
             break;
         case 'literature':
             pageTitle = 'Literature Projects';
             projects = [
-                {
-                    id: 'literature1',
-                    title: 'Literature Title 1',
-                    description: 'Description of literature 1.',
-                    creator: 'Literature Creator 1',
-                    published: '2024',
-                    image: filmImage,
-                },
-                {
-                    id: 'literature2',
-                    title: 'Literature Title 2',
-                    description: 'Description of literature 2.',
-                    creator: 'Literature Creator 2',
-                    published: '2024',
-                    image: filmImage,
-                },
+              /* your literature projects here */
             ];
             break;
         default:
@@ -114,7 +84,8 @@ const Category = () => {
 
     return (
         <div className="category-page">
-            <h1>{pageTitle}</h1>
+        <h1>{pageTitle}</h1>
+        {projects.length > 0 ? (
             <div className="category-grid">
                 {projects.map((project, index) => (
                     <div key={index} className="category-box">
@@ -149,7 +120,12 @@ const Category = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        ) : (
+            <div className="no-projects-message">
+                <p>No projects yet</p>
+            </div>
+        )}
+    </div>
     );
 };
 

@@ -19,7 +19,7 @@ function Contact() {
           <p>Country: Israel</p>
         </div>
         <div className="social-media">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/scorpioncobra52" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -113,6 +113,7 @@ function Contact() {
         </button>
 
         {state.succeeded && <p className="success-message">Thanks for contacting me! I will get back to you soon.</p>}
+        {state.errors &&  <p className="error-message">Submission failed. Please try again later.</p>}
       </form>
     </div>
   </div>

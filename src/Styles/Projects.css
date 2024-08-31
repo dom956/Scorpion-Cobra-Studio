@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 130%;
-  background: url('../Images/background1.png') center/cover no-repeat;
+  background: url('../Images/background2.png') center/cover no-repeat;
   z-index: -2; /* Place behind the overlay and content */
 }
 
