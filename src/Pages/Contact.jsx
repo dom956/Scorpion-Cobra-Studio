@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import "../Styles/Contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedinIn, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 function Contact() {
@@ -24,6 +24,9 @@ function Contact() {
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+          <a href="https://github.com/dom956" target="_blank" rel="noopener noreferrer" className='github-icon'>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="https://www.youtube.com/@scorpioncobrastudio" target="_blank" rel="noopener noreferrer" className="youtube-icon">
             <FontAwesomeIcon icon={faYoutube} />

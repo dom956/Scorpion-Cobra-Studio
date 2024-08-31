@@ -68,7 +68,11 @@
 }
 
 .social-media .youtube-icon:hover {
-  color: #ff0000; /* Red color on hover for YouTube icon */
+  color: #ff0000; 
+}
+
+.social-media .github-icon:hover {
+  color: black; 
 }
 
 /* CSS for other social media icons */
