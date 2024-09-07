@@ -1,21 +1,12 @@
+/* try to make all images preseved their aspect ratio so they will never lose their size */
+
 .category-page {
-  background: url('../Images/background3.png') center/cover no-repeat;
+  background-color: black;
   color: white;
   height: 100vh;
   overflow: hidden;
   position: relative;
   z-index: 0;
-}
-
-.category-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: -1; 
 }
 
 .category-page > h1 {
@@ -35,7 +26,7 @@
 
 .category-box {
   border: 1px solid #ccc;
-  background-color: black;
+  background-color: rgb(12, 15, 54);
   padding: 20px;
   display:flex;
   flex-direction: row; 
@@ -43,7 +34,6 @@
   margin-left: 4px;
   margin-right: 4px;
   position: relative; /* Create a stacking context for z-index */
-  z-index: 1; 
 }
 
 .category-info {
@@ -73,7 +63,7 @@
   height: 250px; 
   margin-left: 20px; 
   position: relative; /* Create a stacking context */
-  z-index: 2; 
+  background-color: rgb(0, 0, 0, 1);
 }
 
 .category-image a {
@@ -86,7 +76,13 @@
   height: 100%;
   display: block;
   position: relative; /* Create a stacking context for the image */
-  z-index: 1; 
+  opacity: 0.5;
+  
+}
+
+
+.category-image img:hover{
+  opacity: 1;
 }
 
 .created-with-container {
