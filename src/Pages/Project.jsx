@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import '../Styles/Project.css';
-import splashscreen from '../Images/splashscreen.png';
+import logo from '../Images/Logos/logowhitebg.png';
 
 const Project = () => {
     const { id } = useParams();
@@ -15,11 +15,10 @@ const Project = () => {
             title: 'Escape The Humans',
             trailerId: '6r9mpLfZKbQ',
             storeLinks: [
-              { name: 'Google Play', url: 'https://play.google.com/' },
-              { name: 'Itch.io', url: 'https://itch.io/' }
+              { name: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.ScorpionCobraStudio.EscapeTheHumans' },
+              { name: 'Itch.io', url: 'https://dom678.itch.io/escape-the-humans'}
               
             ],
-            
           };
           break;
         case 'game2':
@@ -30,14 +29,13 @@ const Project = () => {
             storeLinks: [
               { name: 'WebGL', url: 'https://play.google.com/' }
             ],
-            
           };
           break;
           case 'web1':
             project = {
               id: id,
               title: 'Scorpion Cobra Studio',
-              image: splashscreen,
+              image: logo,
             };
             break;
         default:
@@ -68,7 +66,15 @@ const Project = () => {
         {project.storeLinks && project.storeLinks.length > 0 && (
           <div className="store-links">
             {project.storeLinks.map((store, index) => (
-              <a key={index} href={store.url} className="store-link">{store.name}</a>
+               <a 
+               key={index} 
+               href={store.url} 
+               className="store-link" 
+               target="_blank" 
+               rel="noopener noreferrer"
+             >
+               {store.name}
+             </a>
             ))}
           </div>
         )}

@@ -3,19 +3,7 @@
   justify-content: center;
   width: 100%;
   position: relative;
-}
-
-.contact-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../Images/background2.png') center/cover no-repeat;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  background-blend-mode: overlay;
+  background-color: black;
 }
 
 .contact-container {

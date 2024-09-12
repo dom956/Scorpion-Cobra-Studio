@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Styles/Home.css";
-import splashscreen from "../Images/splashscreen.png";
+import splashscreen from "../Images/projectsImages/escape the humans.png";
 import { Link } from 'react-router-dom';
 
 const projectList = {

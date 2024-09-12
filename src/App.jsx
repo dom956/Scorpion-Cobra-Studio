@@ -10,12 +10,14 @@ import Project from './Pages/Project';
 import Footer from './Components/Footer';
 import Category from './Pages/Category';
 import "./App.css";
+import { useMediaQuery } from 'react-responsive';
 
 
 function App() {
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 768px)' });
   return (
     <Router>
-        <div className='app-wrapper'>
+        <div className={`app-wrapper ${isDesktopOrLaptop ? 'desktop' : 'mobile'}`}>
                 <NavbarMenu/>
                 <div className='main-content'>
                     <Routes>
