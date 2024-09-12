@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../Styles/Category.css';
-import filmImage from '../Images/film.jpg';
-import splashscreen from '../Images/splashscreen.png';
+import filmImage from '../Images/projectsImages/film.jpg';
+import splashscreen from '../Images/projectsImages/escape the humans.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUnity, faReact, faJs, faBootstrap, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import audacityicon from "../Images/icons/audacityicon.png";
 import godoticon from "../Images/icons/godoticon.png";
-import logo from "../Images/logowhitebg.png";
+import logo from "../Images/Logos/logowhitebg.png";
 
 const Category = () => {
     const { categoryName } = useParams();

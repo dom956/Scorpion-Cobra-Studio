@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import {Link } from 'react-router-dom';
-import logo from '../Images/logo.png';
+import logo from '../Images/Logos/logo.png';
 import "../Styles/Navbar.css";
 
 
