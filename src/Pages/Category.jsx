@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../Styles/Category.css';
-import filmImage from '../Images/projectsImages/film.jpg';
+import filmImage from '../Images/ImagesCategories/film.jpg';
 import splashscreen from '../Images/projectsImages/escape the humans.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUnity, faReact, faJs, faBootstrap, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
