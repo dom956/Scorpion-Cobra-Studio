@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f34a50d.css",
+    "main.js": "/static/js/main.716dd38a.js",
+    "static/js/453.dcec7381.chunk.js": "/static/js/453.dcec7381.chunk.js",
+    "static/media/logowhitebg.png": "/static/media/logowhitebg.d04d43a11fe7478876c7.png",
+    "static/media/escape the humans.png": "/static/media/escape the humans.e6c9789cbcd89af65ab1.png",
+    "static/media/film.jpg": "/static/media/film.cce7242420c91c00cd12.jpg",
+    "static/media/background1.jpg": "/static/media/background1.4a18aa495c9604e2e961.jpg",
+    "static/media/csharpIcon.png": "/static/media/csharpIcon.302c7f0623b54aa31f55.png",
+    "static/media/background2.png": "/static/media/background2.973e3adc49f80ad0fec8.png",
+    "static/media/gaming.jpg": "/static/media/gaming.e47bfc4626ac507db426.jpg",
+    "static/media/logo.png": "/static/media/logo.56afe92a804dbacbd310.png",
+    "static/media/mongodbicon.png": "/static/media/mongodbicon.a7bc7f1c53c3bbb749e7.png",
+    "static/media/audacityicon.png": "/static/media/audacityicon.0805e7c971ce2893a253.png",
+    "static/media/writing.jpg": "/static/media/writing.f2f3555edd9328ca37ca.jpg",
+    "static/media/errorpage.jpeg": "/static/media/errorpage.b8ee9d6936c4d6eab83a.jpeg",
+    "static/media/web.jpg": "/static/media/web.a2a823ce3c8208144894.jpg",
+    "static/media/gdscripticon.png": "/static/media/gdscripticon.ab86a3afdb46397b3e3e.png",
+    "static/media/godoticon.png": "/static/media/godoticon.69d3f8f8df2730a5c22e.png",
+    "index.html": "/index.html",
+    "main.9f34a50d.css.map": "/static/css/main.9f34a50d.css.map",
+    "main.716dd38a.js.map": "/static/js/main.716dd38a.js.map",
+    "453.dcec7381.chunk.js.map": "/static/js/453.dcec7381.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f34a50d.css",
+    "static/js/main.716dd38a.js"
+  ]
+}
