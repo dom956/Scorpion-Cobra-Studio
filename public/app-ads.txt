@@ -1,4 +1,3 @@
-aceinmobi.com, 9e311c7a68e94888aac7fbb4272381e2, RESELLER
 adform.com, 716, RESELLER
 admanmedia.com, 2153, RESELLER
 admanmedia.com, 990, RESELLER
@@ -27,6 +26,7 @@ krushmedia.com, ajxf6R585a9m6Catvk, RESELLER
 lacunads.com, lcb555b3bc8667a09a, RESELLER
 lijit.com, 465542, RESELLER, fafdf38b16bf6b2b
 lijit.com, 481366, RESELLER, fafdf38b16bf6b2b
+lijit.com, 483304, RESELLER, fafdf38b16bf6b2b
 lijit.com, 489963, RESELLER, fafdf38b16bf6b2b
 lijit.com, 491737, RESELLER, fafdf38b16bf6b2b
 lijit.com, 503707, RESELLER, fafdf38b16bf6b2b
@@ -35,13 +35,13 @@ loopme.com, 11635, RESELLER, 6c8d5f95897a5a3b
 loopme.com, 9621, RESELLER, 6c8d5f95897a5a3b
 lunamedia.io, 2fdb16a1-5025-4c41-9b17-e01e47ebc8b4, RESELLER, 524ecb396915caaf
 mars.media, 1010442, RESELLER, 8624339f102fb076
+Media.net, 8CU12AQ1Y, RESELLER
 onetag.com, 8668c16092f01e8, RESELLER
 onlinemediasolutions.com, 23120, RESELLER
 openx.com, 540393169, RESELLER, 6a698e2ec38604c6
 openx.com, 540679900, RESELLER, 6a698e2ec38604c6
 openx.com, 540857594, RESELLER, 6a698e2ec38604c6
 openx.com, 540861995, RESELLER, 6a698e2ec38604c6
-openx.com, 559792583, RESELLER, 6a698e2ec38604c6
 orangeclickmedia.com, c-1181, RESELLER
 outbrain.com, 0023749a2264ea0429a71b54ac9ca0de9a, RESELLER
 outbrain.com, 00ab8f68679cc060c8bbc1035e70030614, RESELLER
@@ -63,6 +63,7 @@ pubmatic.com, 162588, RESELLER, 5d62403b186f2ace
 pubmatic.com, 162882, RESELLER, 5d62403b186f2ace
 pubmatic.com, 162968, RESELLER, 5d62403b186f2ace
 pubmatic.com, 163319, RESELLER, 5d62403b186f2ace
+pubmatic.com, 164119, RESELLER, 5d62403b186f2ace
 pubmatic.com, 164532, RESELLER, 5d62403b186f2
 pubmatic.com, 164601, RESELLER, 5d62403b186f2ace
 pubnative.net, 1006955, RESELLER, d641df8625486a7b
@@ -70,6 +71,7 @@ pubnative.net, 1007040, RESELLER, d641df8625486a7b
 pubnative.net, 1007974, RESELLER, d641df8625486a7b
 pubnative.net, 1008379, RESELLER, d641df8625486a7b
 pubwise.io, 22376824, RESELLER, c327c91a93a7cdd3
+risecodes.com, 6486c6155b231000010244b0, RESELLER
 rubiconproject.com, 14558, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 15268, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 15854, RESELLER, 0bfd66d529a55807
@@ -91,11 +93,12 @@ rubiconproject.com, 26250, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 26270, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 26292, RESELLER, 0bfd66d529a55807
 sharethrough.com, 6qlnf8SY, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, bXzzb1bR, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, K5WDGAsP, RESELLER, d53b998a7bd4ecd2
 smartadserver.com, 3172, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4568, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4610, RESELLER, 060d053dcf45cbf3
 thebrave.io, 1234634, RESELLER, c25b2154543746ac
-themediagrid.com, B8N9YH, RESELLER, 35d5010d7789b49d
 toponad.com, 165535463cfb70, RESELLER, 1d49fe424a1a456d
 triplelift.com, 12158, RESELLER, 6c33edb13117fd86
 triplelift.com, 12908, RESELLER, 6c33edb13117fd86
@@ -106,19 +109,24 @@ verve.com, 15503, RESELLER, 0c8f5958fc2d6270
 video.unrulymedia.com, 1058378980, RESELLER
 video.unrulymedia.com, 123476257, RESELLER
 video.unrulymedia.com, 158727213, RESELLER
-video.unrulymedia.com, 169764768, RESELLER
 video.unrulymedia.com, 2464975885, RESELLER
 video.unrulymedia.com, 324806554, RESELLER, a670c89d4a324e47
 video.unrulymedia.com, 6111915185540403805, RESELLER
 videoheroes.tv, 212428, RESELLER, 064bc410192443d8
-videoheroes.tv, 212550, RESELLER, 064bc410192443d8
+videoheroes.tv, 212499, RESELLER, 064bc410192443d8
 visiblemeasures.com, 1020, RESELLER
 webeyemob.com, 80029, RESELLER
 xandr.com, 13799, RESELLER
 xandr.com, 15769, RESELLER
-xandr.com, 15840, RESELLER
 xandr.com, 7353, RESELLER
 xapads.com, 117219, RESELLER
 yeahmobi.com, 5135195, RESELLER
 zmaticoo.com, 5135195, RESELLER
 zmaticoo.com, 5135704, RESELLER
+lijit.com, 483304, RESELLER, fafdf38b16bf6b2b
+media.net, 8cu12aq1y, RESELLER
+pubmatic.com, 164119, RESELLER, 5d62403b186f2ace
+risecodes.com, 6486c6155b231000010244b0, RESELLER
+sharethrough.com, bxzzb1br, RESELLER, d53b998a7bd4ecd2
+sharethrough.com, k5wdgasp, RESELLER, d53b998a7bd4ecd2
+videoheroes.tv, 212499, RESELLER, 064bc410192443d8
