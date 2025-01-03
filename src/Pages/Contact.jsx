@@ -6,7 +6,7 @@ import { faTwitter, faLinkedinIn, faYoutube, faGithub } from '@fortawesome/free-
 
 
 function Contact() {
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_FORM_ID); // Use the form ID provided by Formspree from .env
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORMSPREE_FORM_ID);
 
   return (
     <div className='contact-page'>
@@ -15,21 +15,20 @@ function Contact() {
         <div className="contact-info">
           <h2>Contact Me</h2>
           <p>Email: scorpioncobrastudio@gmail.com</p>
-          <p>Phone: +972515400522</p>
           <p>Country: Israel</p>
         </div>
         <div className="social-media">
           <a href="https://x.com/scorpioncobra52" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faTwitter} id = "contact-logo" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedinIn} />
+          <a href="https://www.linkedin.com/in/osher-volotker" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedinIn} id = "contact-logo"/>
           </a>
           <a href="https://github.com/dom956" target="_blank" rel="noopener noreferrer" className='github-icon'>
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} id = "contact-logo"/>
           </a>
           <a href="https://www.youtube.com/@scorpioncobrastudio" target="_blank" rel="noopener noreferrer" className="youtube-icon">
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faYoutube} id = "contact-logo"/>
           </a>
         </div>
       </div>
@@ -53,7 +52,14 @@ function Contact() {
           <input id="employerPhone" type="number" name="employerPhone" placeholder="optional"  />
           <ValidationError prefix="Phone of Employer" field="employerPhone" errors={state.errors} />
         </label>
-        <p>if international dialing code is different than employer country, please add that to phone or details sections</p>
+          <p>if international dialing code is different than employer country, please add that to phone or details sections</p>
+          
+        <label htmlFor="employerCompany">
+        Employer Company:
+        <input id="employerCompany" type="text" name="employerCompany" placeholder="optional" />
+        <ValidationError prefix="Employer Company" field="employerCompany" errors={state.errors} />
+        </label>
+
 
         <label htmlFor="employerEmail">
           Employer Email:

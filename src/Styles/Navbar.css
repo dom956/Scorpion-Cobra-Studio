@@ -1,5 +1,4 @@
 .container {
-    /* Ensure relative positioning for absolute children */
     min-height: 100px;
     padding: 0;
     margin: 0;
@@ -17,14 +16,14 @@
   }
   
 .logo {
-  max-height: 150px; /* img size */
+  max-height: 150px; 
 }
 
 .links {
-  display: flex; /* Ensures the links are displayed inline */
-  justify-content: center; /* Centers the links within the Nav */
-  align-items: center; /* Ensures vertical alignment */
-  width: 100%; /* Takes up the full width of the container */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
 }
 
 .links a:hover{
@@ -36,4 +35,19 @@
   background-size: cover;
 }
 
- 
+
+@media only screen and (max-width: 768px) {
+  .logo-brand {
+    position: absolute; 
+    left: -15px; 
+    top: 5px; 
+    margin-top: 0; 
+    margin-left: 0; 
+  }
+
+  .logo {
+    max-height: 100px; 
+    padding-bottom: 50px;
+    padding-left: 10px;
+  }
+}

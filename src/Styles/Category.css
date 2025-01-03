@@ -1,5 +1,3 @@
-/* try to make all images preseved their aspect ratio so they will never lose their size */
-
 .category-page {
   background-color: black;
   height: 100vh;
@@ -25,14 +23,14 @@
 
 .category-box {
   border: 1px solid #ccc;
-  background-color: rgb(12, 15, 54);
+  background-color: rgb(113, 121, 126);
   padding: 20px;
   display:flex;
   flex-direction: row; 
   align-items: flex-start; 
   margin-left: 4px;
   margin-right: 4px;
-  position: relative; /* Create a stacking context for z-index */
+  position: relative; 
 }
 
 .category-info {
@@ -61,20 +59,20 @@
   width: 100px; 
   height: 250px; 
   margin-left: 20px; 
-  position: relative; /* Create a stacking context */
+  position: relative; 
   background-color: rgb(0, 0, 0, 1);
 }
 
 .category-image a {
-  position: relative; /* Create a stacking context for the link */
-  z-index: 3; /* Ensure the link is above the image */
+  position: relative; 
+  z-index: 3; 
 }
 
 .category-image img {
   width: 100%;
   height: 100%;
   display: block;
-  position: relative; /* Create a stacking context for the image */
+  position: relative; 
   opacity: 0.5;
   
 }
@@ -93,7 +91,7 @@
 }
 
 .created-with-text {
-  padding-right: 10px; /* Adjust spacing between text and icons */
+  padding-right: 10px;
 }
 
 .icons {
@@ -106,14 +104,14 @@
   display: flex;
   align-items: center;
   justify-content: center; 
-  width: 32px; /* Set a fixed width for consistent icon sizing */
-  height: 32px; /* Set a fixed height for consistent icon sizing */
+  width: 32px; 
+  height: 32px; 
 }
 
 .icon img {
-  width: 100%; /* Ensure the image fills the container */
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: contain; /* Maintain aspect ratio of images */
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
 }
 
 .no-projects-message {
@@ -124,4 +122,14 @@
   font-size: 35px; 
   font-weight: bold;
   text-align: center; 
+}
+
+@media only screen and (max-width: 768px){
+  .category-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .category-page{
+    height:auto;
+  }
 }

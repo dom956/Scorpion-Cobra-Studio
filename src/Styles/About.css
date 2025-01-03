@@ -7,6 +7,17 @@
   height: 100vh;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+body {
+  background: url('../Images/background1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 .about-page::before {
   content: '';
   position: absolute;
@@ -36,10 +47,10 @@
   }
   
   .image-placeholder {
-    width: 150px; /* Increased size */
-    height: 150px; /* Increased size */
+    width: 150px; 
+    height: 150px; 
     border-radius: 50%;
-    background-color: #ccc;
+    background: url('../Images/profileimage.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,8 +59,8 @@
   
   .text-box {
     flex-grow: 1;
-    width: 100%; /* Ensure it takes up available width */
-    height: 150px; /* Match height with image for a square shape */
+    width: 100%; /* ensure it takes up available width */
+    height: 150px; /* match height with image for a square shape */
     background-color: black;
     display: flex;
     font-size: 16px; 
@@ -92,9 +103,9 @@
   
   .tool-item {
     display: flex;
-    align-items: stretch; /* Ensure items stretch to the same height */
+    align-items: stretch; /*  items stretch to the same height */
     border: 1px solid white;
-    padding: 0; /* Remove padding */
+    padding: 0; 
   }
   
   .tool-title {
@@ -102,16 +113,60 @@
     padding: 10px;
     border-right: 1px solid white;
     display: flex;
-    align-items: center; /* Center the content vertically */
+    align-items: center; 
   }
   
   .tools-symbols {
     flex: 9;
     padding: 10px;
     display: flex;
-    align-items: center; /* Center the content vertically */
+    align-items: center; 
   }
 
   .icon{
     margin-right: 10px;
   }
+
+  @media only screen and (max-width: 768px){
+    .about-page{
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+    }
+
+    .tool-item{
+      overflow: auto;
+    }
+
+    .image-placeholder{
+      width: 150px; 
+      height: 120px; 
+    }
+    .text-box{
+     width: 100%; 
+     height: auto; 
+     background-color: black; 
+     color: white; 
+     display: block; 
+     font-size: 12px; 
+     padding: 10px; 
+     border: 1px solid white; 
+     white-space: normal; 
+     word-wrap: break-word; 
+     overflow: auto; /* adds scrolling if the content overflows */
+      }
+      .education-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid white;
+        padding:  0;
+      }
+      .education-column{
+          border-bottom: 1px solid white;
+        }
+        .about-page{
+          height: auto;
+        }
+}
+  

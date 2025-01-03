@@ -6,8 +6,10 @@ function Projects() {
     return (
       <div className="projects-page">
       <div className='field'>
-        <h1>Career Projects: <p>career projects are fields for hire or collaboration.</p></h1>
-        <h1>Impression Projects: <p>impression projects are showcase of my skills, and not looking for work in those fields.</p></h1>
+          <h1>Career Projects:
+          <p>career projects are fields for hire or collaboration.</p></h1>
+          <h1>Impression Projects:
+          <p>impression projects are showcase of my skills, and not looking for work in those fields.</p></h1>
       </div>
       <Link to="/category/gaming" className='link'>
       <div className="category gaming">
@@ -40,8 +42,5 @@ function Projects() {
     </div>
     );
   }
-
-
-
 
   export default Projects;

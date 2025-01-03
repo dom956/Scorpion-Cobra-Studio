@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import '../Styles/Project.css';
 import logo from '../Images/Logos/logowhitebg.png';
+import game2image from '../Images/projectsImages/dont let it grow.png';
 
 const Project = () => {
     const { id } = useParams();
@@ -25,9 +26,9 @@ const Project = () => {
           project = {
             id: id,
             title: 'Dont Let It Grow',
-            trailerId: '6r9mpLfZKbQ',
+            image: game2image,
             storeLinks: [
-              { name: 'WebGL', url: 'https://play.google.com/' }
+              { name: 'Itch.io', url: 'https://dom678.itch.io/dont-let-it-grow' }
             ],
           };
           break;
@@ -45,48 +46,50 @@ const Project = () => {
    
 
     return (
-        <div className='project-page'>
-      <div className='project-container'>
-        <h1>{project.title}</h1>
-        
-        {/* Render trailer video if trailerId is present */}
-        {project.trailerId && (
-          <div className="video-container">
-            <iframe
-              title={`${project.title} Trailer`}
-              width="560"
-              height="315"
-              src={`https://www.youtube.com/embed/${project.trailerId}`}
-              allowFullScreen
-            ></iframe>
-          </div>
-        )}
-        
-        {/* Render store links if storeLinks array is present */}
-        {project.storeLinks && project.storeLinks.length > 0 && (
-          <div className="store-links">
-            {project.storeLinks.map((store, index) => (
-               <a 
-               key={index} 
-               href={store.url} 
-               className="store-link" 
-               target="_blank" 
-               rel="noopener noreferrer"
-             >
-               {store.name}
-             </a>
-            ))}
-          </div>
-        )}
-        
-        {/* Render project image if image is present */}
-        {project.image && (
-          <div className="project-image-container">
-            <img src={project.image} alt={project.title} className='project-image' />
-          </div>
-        )}
-      </div>
+      <div className="project-page">
+  <div className="project-container">
+    <h1>{project.title}</h1>
+
+    {/* video or image */}
+    <div className="video-or-image-container">
+      {project.trailerId ? (
+        <iframe
+          id="project-trailer"
+          title={`${project.title} Trailer`}
+          width="560"
+          height="315"
+          src={`https://www.youtube.com/embed/${project.trailerId}`}
+          allowFullScreen
+        ></iframe>
+      ) : (
+        project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-image"
+          />
+        )
+      )}
     </div>
+
+    {/* store links */}
+    {project.storeLinks && project.storeLinks.length > 0 && (
+      <div className="store-links">
+        {project.storeLinks.map((store, index) => (
+          <a
+            key={index}
+            href={store.url}
+            className="store-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {store.name}
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</div>
     );
 };
 

@@ -23,6 +23,9 @@ function NavbarMenu() {
         <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
         <Nav.Link as={Link} to="/about">About</Nav.Link>
         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+        <Nav.Link as={Link} to="https://drive.google.com/drive/u/0/folders/1lyrkLqIf8DC3n_sB8ps8GkxDY4R1dl6h" target="_blank" rel="noopener noreferrer">
+        Press Kit
+      </Nav.Link>
       </Nav>
     </Container>
   </Navbar>
@@ -30,5 +33,3 @@ function NavbarMenu() {
 }
 
 export default NavbarMenu;
-
-/* add press kit for journalist in navbar */

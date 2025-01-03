@@ -18,9 +18,13 @@ function About() {
     return (
       <div className="about-page">
       <div className="profile-section">
-        <div className="image-placeholder"><img src="" alt="profile pic" /></div>
+        <div className="image-placeholder"></div>
         <div className="text-box">
-          <p>hello im Osher Volotker, a passionate gamer to stories and games. im an indie game developer for over 1 year of experience</p>
+          <p>hi, I'm osher volotker, a passionate gamer for games and stories, 
+          after so many years with love for video games. I became a developer to build games, and help others build great games. 
+          Apart from that I also have the passion for stories, both for games and film. I have experience with unity and Godot engines and a variety of tools.
+          My studio currently include only myself, but hopefully it will grow and more great developers could join in.
+          I focus mainly in video games and film for career paths. You are welcome to check out my site and contact me if you wish to hire me or collaborate. I am a very creative person with deep analysis thinking, a team player, organized, and determined. any story you have to tell the world whenever its a game or a film I will be happy to work with you. You name it, I make it.</p>
         </div>
       </div>
 
@@ -94,8 +98,5 @@ function About() {
     </div>
     );
   }
-
-/* add custom SVG to your project since fontawsome dont have them: audacity, blender, krita, mysql, mongoDB, C# */
-
 
   export default About;

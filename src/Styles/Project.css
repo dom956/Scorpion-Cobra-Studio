@@ -3,21 +3,22 @@
   justify-content: center;
   align-items: center;
   height: 100vh; 
-  position: relative; /* Create a stacking context for the overlay */
+  position: relative; 
   background-color: black;
   z-index: 0;
 }
 
 .project-container {
-  width: 40%;
-  max-width: 600px; 
+  width: 100vh;
+  max-height: 100%;
+  max-width: 100%;  
   margin: 0 auto; 
   margin-bottom: 100px; 
   padding: 20px;
   text-align: center; 
   position: relative; 
   z-index: 1; 
-  background-color: black; 
+  background-color: rgb(169, 169, 169); 
   border: 2px solid #ccc; 
   border-radius: 8px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -26,19 +27,20 @@
 
 
 .trailer {
-  max-width: 50%; /* Ensures the image does not exceed the container's width */
-  max-height: 50%; /* Ensures the image does not exceed the container's height */
+  max-width: 50%; 
+  max-height: 50%; 
   object-fit: contain;
   padding-bottom: 5px;
 }
 
 .store-links {
-  margin-top: 20px;
+  margin-top: 20px; 
+  
 }
 
 .store-link {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-right: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -56,12 +58,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Make the container full width */
-  height: 300px; /* Set a fixed height for the container */
+  width: 100%; 
+  height: 400px; 
 }
 
 .project-image {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
+}
+
+@media only screen and (max-width: 768px){
+  .project-container{
+    width: 90vh;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #project-trailer{
+    width: 40vh;
+    
+  }
+  .project-page{
+    height:100vh;
+  }
 }

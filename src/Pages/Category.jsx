@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../Styles/Category.css';
-import filmImage from '../Images/ImagesCategories/film.jpg';
+import game2image from '../Images/projectsImages/dont let it grow.png';
 import splashscreen from '../Images/projectsImages/escape the humans.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUnity, faReact, faJs, faBootstrap, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faUnity, faReact, faJs, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import audacityicon from "../Images/icons/audacityicon.png";
 import godoticon from "../Images/icons/godoticon.png";
 import logo from "../Images/Logos/logowhitebg.png";
@@ -25,7 +25,7 @@ const Category = () => {
                     description: '2D puzzle platformer game, navigate your way through a series of challenging levels, avoid enemies, and solve your way out.',
                     creator: 'Scorpion Cobra Studio',
                     platforms: 'PC, Mobile',
-                    published: '2024',
+                    status: 'Published 2024',
                     createdWith: [
                         { name: 'Unity', icon: faUnity },
                         { name: 'Audacity', icon: audacityicon }
@@ -35,14 +35,14 @@ const Category = () => {
                 {
                     id: 'game2',
                     title: 'Dont Let It Grow',
-                    description: 'Mini 2D game with a message',
+                    description: '2D mini-game with a message',
                     creator: 'Scorpion Cobra Studio',
                     platforms: 'WebGL',
-                    published: '2024',
+                    status: 'published 2025',
                     createdWith: [
                         {name: 'Godot', icon: godoticon }
                     ],
-                    image: filmImage,
+                    image: game2image,
                 },
             ];
             break;
@@ -54,13 +54,12 @@ const Category = () => {
                     title: 'Scorpion Cobra Studio',
                     description: 'An indie game developer studio.',
                     creator: 'Osher Volotker',
-                    published: '2024',
+                    status: 'Published 2024',
                     createdWith: [
                         { name: 'React', icon: faReact },
                         { name: 'HTML', icon: faHtml5 },
                         { name: 'Javascript', icon: faJs },
                         { name: 'CSS', icon: faCss3Alt },
-                        { name: 'Bootstrap', icon: faBootstrap },
                     ],
                     image: logo,
                 },
@@ -94,7 +93,7 @@ const Category = () => {
                             <p>Description: {project.description}</p>
                             <p>Creator: {project.creator}</p>
                             {categoryName === 'gaming' && <p>Platforms: {project.platforms}</p>}
-                            <p>Published: {project.published}</p>
+                            <p>Status: {project.status}</p>
                             {categoryName === 'gaming' || categoryName === 'web' ? (
                                 <div className="created-with-container">
                                     <p className="created-with-text">Created with:</p>

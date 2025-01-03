@@ -46,13 +46,13 @@
 }
 
 .social-media a {
-  color: #000; /* Default color for all icons */
-  font-size: 24px; /* Adjust icon size */
-  transition: color 0.3s; /* Smooth color transition */
+  color: #000; /* default color for all icons */
+  font-size: 24px; 
+  transition: color 0.3s; /* smooth color transition */
 }
 
 .social-media .youtube-icon {
-  color: #000; /* Default color for YouTube icon */
+  color: #000; 
 }
 
 .social-media .youtube-icon:hover {
@@ -65,7 +65,7 @@
 
 /* CSS for other social media icons */
 .social-media a:hover {
-  color: #0077B5; /* Default hover color for other icons */
+  color: #0077B5; /* default hover color for other icons */
 }
 
 form {
@@ -127,4 +127,20 @@ hr.custom-line {
   background: #333; 
   width: 100%;
   margin: 20px auto; 
+}
+
+
+@media (max-width: 768px) {
+  .social-media {
+    padding-bottom: 20px;
+    max-width: 10%;
+    flex-direction: row;
+  }
+  .contact-info-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info{
+    font-size: 14px;
+  }
 }

@@ -1,16 +1,17 @@
 import React from 'react';
 import "../Styles/Home.css";
-import splashscreen from "../Images/projectsImages/escape the humans.png";
+import image1 from "../Images/projectsImages/escape the humans.png";
+import image2 from '../Images/projectsImages/dont let it grow.png';
 import { Link } from 'react-router-dom';
 
 const projectList = {
   game1: {
     projectid: 'game1',
-    image: splashscreen
+    image: image1
   },
   game2: {
     projectid: 'game2',
-    image: splashscreen
+    image: image2
   },
 };
 

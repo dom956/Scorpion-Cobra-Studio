@@ -14,6 +14,7 @@ html, body {
     color: white;
 }
 
+
 /* global styles for desktop devices */
 @media only screen and (min-width: 768px){
     .app-wrapper{
@@ -22,5 +23,13 @@ html, body {
 
     .main-content{
         flex: 1;  /* fill out remaining space */
+    }
+}
+
+
+/* global styles for mobile devices */
+@media only screen and (max-width: 430px){
+        .app-wrapper{
+        flex-direction: column;
     }
 }
